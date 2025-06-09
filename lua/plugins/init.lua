@@ -37,4 +37,6 @@ return {
   		},
   	},
   },
+
+  require("configs.debug"),
 }
