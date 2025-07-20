@@ -41,3 +41,7 @@ map("n", "<leader>lg", function()
   end
 end, { desc = "Toggle floating lazygit" })
 
+map("n", "<leader>ch", "<cmd>CopilotChat<CR>", { desc = "Open Copilot chat" })
+map("n", "gnh", ":Gitsigns next_hunk<CR>", { desc = "Go to next git hunk" })
+map("n", "grh", ":Gitsigns reset_hunk<CR>", { desc = "Reset git hunk" })
+
