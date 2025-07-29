@@ -41,7 +41,9 @@ map("n", "<leader>lg", function()
   end
 end, { desc = "Toggle floating lazygit" })
 
-map("n", "<leader>ch", "<cmd>CopilotChat<CR>", { desc = "Open Copilot chat" })
+map("n", "<leader>cc", "<cmd>CopilotChat<CR>", { desc = "Open Copilot chat" })
 map("n", "gnh", ":Gitsigns next_hunk<CR>", { desc = "Go to next git hunk" })
 map("n", "grh", ":Gitsigns reset_hunk<CR>", { desc = "Reset git hunk" })
+map("n", "gb", ":Gitsigns blame_line<CR>", { desc = "Git blame line" })
+map("n", "gph", ":Gitsigns preview_hunk<CR>", { desc = "Git preview hunk" })
 

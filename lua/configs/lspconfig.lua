@@ -5,12 +5,13 @@ vim.lsp.enable(servers)
 
 local mason_lspconfig = require("mason-lspconfig")
 mason_lspconfig.setup {
-    ensure_installed = { 
-        "gopls",
-        "dockerls",
-        "marksman",
-        "pyright",
-    },
+  ensure_installed = {
+    "gopls",
+    "dockerls",
+    "marksman",
+    "pyright",
+    "kotlin_language_server",
+  },
 }
 
 local lspconfig = require("lspconfig")
@@ -23,5 +24,9 @@ lspconfig.gopls.setup {
       },
       staticcheck = true,
     },
+    kotlin = {
+      -- Add any specific Kotlin LSP settings here if needed
+    }
   },
 }
+

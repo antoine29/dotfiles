@@ -34,6 +34,7 @@ return {
         "json", "yaml",
         "bash", "regex",
         "javascript", "typescript",
+        "kotlin"
   		},
   	},
   },
