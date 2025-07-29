@@ -51,6 +51,23 @@ return {
     },
     -- See Commands section for default commands if you want to lazy load on them
   },
+  {
+    "epwalsh/obsidian.nvim",
+    version = "*",
+    lazy = true,
+    ft = "markdown",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      workspaces = {
+        {
+          name = "obsidian",
+          path = "/mnt/c/Users/florea79/obsidian",
+        }
+      },
+    },
+  },
 
   require("configs.debug"),
 }
